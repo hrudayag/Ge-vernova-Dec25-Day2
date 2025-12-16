@@ -15,4 +15,22 @@ public class Line {
         double length = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         return length;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Line otherLine = (Line) obj;
+
+        double thisLength = this.calculateLength();
+        double otherLength = otherLine.calculateLength();
+
+        return Double.compare(thisLength, otherLength) == 0;
+    }
 }
