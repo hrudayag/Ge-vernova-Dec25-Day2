@@ -43,6 +43,5 @@ public class EmployeeWageComputation {
         System.out.println("\nTotal Working Days: " + totalWorkingDays);
         System.out.println("Total Working Hours: " + totalWorkingHours);
         System.out.println("Total Monthly Wage: " + totalMonthlyWage);
-        System.out.println("\nThank You");
     }
 }
